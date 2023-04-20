@@ -1,0 +1,343 @@
+ABEX III - PROJETO DE SOFTWARE- 1030784 
+
+ 
+
+2023-01 
+
+ 
+
+Professor(a)(es) 
+
+RADAMÉS PEREIRA 
+
+VIVIANE DUARTE BONFIM 
+
+ 
+
+ 
+
+ 
+
+Atributos de uma boa especificação de Projeto de Software: 
+
+ 
+
+Clareza 
+
+Não Ambígua 
+
+Completa 
+
+Simples 
+
+Bem escrita 
+
+ 
+
+ 
+
+UNIVERSIDADE COMUNITÁRIA REGIONAL DE CHAPECÓ - UNOCHAPECÓ 
+
+ÁREA DE CIÊNCIAS EXATAS E AMBIENTAIS 
+
+SISTEMAS DE INFORMAÇÃO/CIÊNCIA DA COMPUTAÇÃO 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Título 
+
+Site Para o Curso de Enfermagem 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Bruno Getten Triches 
+
+Guilherme Brandalise 
+
+Paulo Ricardo Vanzella 
+
+Lucas Sales 
+
+Rafael Dalcin 
+
+ 
+
+Introdução 
+
+Resumo do Projeto 
+
+O sistema será um website, onde os estudantes do curso de enfermagem irão cadastrar os membros de uma família a qual será monitorada por todo o período da Abex do curso de enfermagem. 
+
+Esse projeto surgiu devido à dificuldade dos alunos de manter os dados atualizados e armazenados durante o percurso do curso. 
+
+ 
+
+Plataforma de desenvolvimento 
+
+Será utilizado ambos o Visual Studio Code e Visual Studio como editores de texto/compiladores. A ideia inicial é utilizar de HTML, CSS, e Javascript para fazer o FrontEnd do site, para o BackEnd do site utilizaremos C#(Sharp) e para armazenar as informações faremos uso do SQL Server. 
+
+Plataforma de operação 
+
+Ainda está sendo desenvolvida a ideia, porém, estamos considerando hospedar em um servido    patrocinado pela própria Unochapecó, já que a mesma vai se beneficiar e muito com o projeto. 
+
+Definições e siglas 
+
+HTML, CSS, C#, Javascript: linguagens de programação/marcação. 
+
+Visual Studio: ferramenta para edição de texto/código. 
+
+SQL: ferramenta de banco de dados. 
+
+Perspectiva do produto 
+
+Modos de operação 
+
+Requisitos de adaptação ao ambiente 
+
+ 
+
+Número de ordem 
+
+Requisito 
+
+Detalhes 
+
+1 
+
+Cadastro de usuário 
+
+O usuário responsável (o admin) vai criar o login e senha dos outros usuários 
+
+2 
+
+Cadastrar o paciente 
+
+ 
+
+O usuário deve requisitar com o paciente seus dados e informações para poder cadastrá-lo 
+
+ 
+
+ 
+
+Estabelecer conexão familiar 
+
+ 
+
+O usuário informa se esse paciente pertence a uma família já cadastrada no sistema, ou se é uma nova família 
+
+ 
+
+ 
+
+Funções do produto 
+
+Cadastro das famílias: o usuário irá cadastrar os pacientes e vinculá-los a uma família. 
+
+Salvar/alterar dados: será possível salvar os dados que foram cadastrados, alterar ou excluir dados já existentes 
+
+Gerar relatórios: Serão gerados relatórios referentes a diferentes aspectos da saúde e afins dos pacientes 
+
+ 
+
+Características dos usuários 
+
+Usuário admin: será o professor da matéria de Abex do curso de enfermagem, esse terá total acesso aos dados e será quem irá cadastrar todos os usuários de nível inferior. 
+
+Usuário padrão: serão os estudantes, esses terão acesso aos dados apenas de seus respectivos pacientes e poderão gerar relatórios. 
+
+Usuário paciente: Apenas possuirão acesso a própria ficha de dados. 
+
+Restrições 
+
+Devido ao tipo de dados que o site vai ter, os quais são informações muito pessoais dos pacientes, será necessário ter um nível de restrição de quem poderá ver essas informações e como elas poderão ser tratadas. 
+
+Hipóteses de trabalho 
+
+Descrevem-se aqui fatores que não são restrições limitativas do desempenho, como na subseção anterior, mas fatores cuja alteração requer modificações na ER, como, por exemplo, versão a ser utilizada do ambiente operacional ou plataforma de desenvolvimento. 
+
+Exemplos: Linguagem de programação que depende de apis e hardware... 
+
+Fatores que podem impactar na tecnologia utilizada para desenvolver. 
+
+Requisitos específicos 
+
+Interfaces externas 
+
+Visão geral 
+
+Gerar de forma eficiente relatórios e acompanhamentos e ao mesmo tempo monitorar as famílias e seus respectivos membros de maneira a aproximar o relacionamento entre a família e os enfermeiros.  
+
+1 Acompanhar a variação de sinais vitais e sanguíneos dos pacientes. 
+
+2 Acessar informações importantes para o monitoramento da saúde e do bem estar físico dos pacientes. 
+
+3 Gerar relatórios apontando as variações dos sinais entre os períodos acompanhados. 
+
+4 Automatizar o armazenamento e tratamento dos dados dos pacientes 
+
+5 Fornece ao paciente e ao enfermeiro responsável um acompanhamento mais aprofundado e preciso da saúde de sua família. 
+
+ 
+
+Requisitos para interfaces gráficas de usuário 
+
+ 
+
+O sistema será composto por uma tela de login para definir o usuario. No menu o usuario poderá ver as informações respectivas para o seu acesso. No exemplo seria um admin pois tem acesso a tudo. 
+
+Será informado os dados pessoais e vitais dos pacientes, esses serão atualizados com o passar do tempo e os estudantes poderão gerar relatórios para os mesmos 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Requisitos funcionais 
+
+Diagramas de casos de uso 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fluxos dos casos de uso 
+
+Pré-condições para a realização do caso de uso; 
+
+Fluxo principal do caso de uso (sucesso), descrito na forma de uma sequência de passos; 
+
+Fluxos alternativos do caso de uso; 
+
+Descrições mais formais, como diagramas de estado ou de atividade, se a complexidade do caso de uso exigir; 
+
+Observações. 
+
+ 
+
+Requisitos não-funcionais 
+
+Requisitos de desempenho 
+
+Requisitos de desempenho devem ser especificados de forma quantitativa e mensurável. 
+
+Exemplo: Capacidade do servidor; largura de banca; capacidade de armazenamento. 
+
+Requisitos de dados persistentes 
+
+Descrevem-se aqui estruturas lógicas de dados persistentes (que mantém seu valor após a execução do programa) que sejam usadas pelo produto. Cada estrutura de dados pode ser, por exemplo, um arquivo convencional ou uma tabela em um banco de dados. 
+
+INCLUIR AQUI O MODELO DE BANCO DE DADOS 
+
+Restrições ao desenho 
+
+Restrições de projeto impostas por padrões externos, com influência da legislação.. 
+
+Atributos de Qualidade 
+
+Indica os atributos de qualidade, seguindo as características e sub-características recomendadas pela norma ISO-9126. 
+
+Análise de UCP 
+
+As tabelas de escopo de valor do produto e tempo de desenvolvimento com Use Case Points - UCP.  
+
+ 
+
+ 
+
+ 
+
+Referências: 
+
+ 
+
+IEEE Std. 830 – 1993. IEEE Recommended Practice for Software Requirements Specifications. 
+
+ 
+
+IEEE ISO/IEC/IEEE 29148 – 2011. IEEE Systems and software engineering — Life cycle processes — Requirements engineering 
+
+ 
+
+ 
+
+ 
+
+OBSERVAÇÃO: Os itens deste modelo de especificação, recomendado pela IEEE, poderão ser complementados com novos itens caso sejam justificáveis. 
