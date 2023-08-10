@@ -7,8 +7,8 @@ body{
 	font-weight: 300;
 	font-size: 15px;
 	line-height: 1.7;
-	color: #6bc77b;
-	background-color: #d8f7f2;
+	color: #53b9ec;
+	background-color: #fcfcfc;
 	overflow-x: hidden;
 }
 a {
@@ -22,7 +22,7 @@ a:hover {
   color: black;
 }
 .link:hover {
-  color: #6bc77b;
+  color: #53b9ec;
 }
 p {
   font-weight: 500;
@@ -30,7 +30,7 @@ p {
   line-height: 1.7;
 }
 h4 {
-  color: #005741;
+  color: #53b9ec;
   font-size: 30px;
   font-weight: 300;
 }
@@ -75,8 +75,8 @@ h6 span{
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  color: black;
-  background-color: #6bc77b;
+  color: #53b9ec;
+  background-color: #53b9ec;
   border: 2px solid #acd7ec;
   font-family: 'unicons';
   content: '\eb4f';
@@ -117,7 +117,7 @@ h6 span{
 .card-front, .card-back {
   width: 100%;
   height: 100%;
-  background-color: #acd7ec;
+  background-color: #b1d4e6;
   background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -263,18 +263,19 @@ h6 span{
   -ms-flex-pack: center;
   text-align: center;
   border: none;
-  background-color: #96d1c6;
+  background-color: #72c2ea;
   color: #102770;
   box-shadow: 0 8px 24px 0 rgba(255,235,167,.2);
 }
 .btn:active,
 .btn:focus{  
   background-color: #102770;
-  color: #80cca0;
+  color: 
+  #91cbe8;
   box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
 }
 .btn:hover{  
-  background-color: #80cca0;
+  background-color: #91cbe8;
   color: black;
   box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
 }
@@ -292,4 +293,19 @@ h6 span{
 	height: 90px;
 	width: auto;
 	display: block;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #f9f9f9; /* Cor de fundo do rodapé */
+  padding: 10px 0;
+}
+
+.footer p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #333; /* Cor do texto */
 }
