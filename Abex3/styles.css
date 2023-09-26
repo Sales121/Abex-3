@@ -7,9 +7,12 @@ body{
 	font-weight: 300;
 	font-size: 15px;
 	line-height: 1.7;
-	color: #53b9ec;
-	background-color: #fcfcfc;
+	color: black;
+	background-color: #376072;
 	overflow-x: hidden;
+
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 a {
 	cursor: pointer;
@@ -22,7 +25,7 @@ a:hover {
   color: black;
 }
 .link:hover {
-  color: #53b9ec;
+  color: #376072;
 }
 p {
   font-weight: 500;
@@ -30,15 +33,17 @@ p {
   line-height: 1.7;
 }
 h4 {
-  color: #53b9ec;
+  color: #376072;
   font-size: 30px;
   font-weight: 300;
+  
 }
 h6 span{
   font-size: 20px;
   padding: 0 20px;
   text-transform: uppercase;
   font-weight: 300;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .section{
   position: relative;
@@ -75,8 +80,8 @@ h6 span{
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  color: #53b9ec;
-  background-color: #53b9ec;
+  color: #376072;
+  background-color: #376072;
   border: 2px solid #acd7ec;
   font-family: 'unicons';
   content: '\eb4f';
@@ -299,7 +304,7 @@ h6 span{
   bottom: 0;
   width: 100%;
   text-align: center;
-  background-color: #f9f9f9; /* Cor de fundo do rodapé */
+  background-color: transparent; /* Cor de fundo do rodapé */
   padding: 10px 0;
 }
 
