@@ -8337,3 +8337,129 @@ a[data-toggle="collapse"] {
 
 .subscribe-form .form-control {
   background: #5356b1; }
+/* Estilo personalizado para o botão de anexar no estilo Apple */
+.file-input {
+  position: relative;
+  overflow: hidden;
+  background-color: #007bff; /* Cor de fundo do botão - Azul */
+  color: #fff; /* Cor do texto do botão - Branco */
+  padding: 10px 15px; /* Espaçamento interno do botão */
+  border: none; /* Remover a borda padrão */
+  border-radius: 8px; /* Cantos arredondados */
+  cursor: pointer; /* Alterar o cursor ao passar o mouse */
+  transition: background-color 0.3s ease; /* Efeito de transição suave */
+
+  /* Adicionar sombra sutil */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para quando o mouse passar sobre o botão */
+.file-input:hover {
+  background-color: #0056b3; /* Cor de fundo alterada ao passar o mouse */
+}
+
+/* Tornar o texto do botão transparente */
+.file-input::file-selector-button {
+  display: none;
+}
+
+/* Estilizar o ícone do botão (opcional) */
+.file-input::before {
+  content: "\f07c"; /* Use um ícone FontAwesome ou outro ícone de sua escolha */
+  font-family: FontAwesome; /* Defina a família de fontes do ícone */
+  font-size: 18px; /* Tamanho do ícone */
+  margin-right: 5px; /* Espaçamento à direita do ícone */
+}
+
+/* Estilizar o nome do arquivo selecionado (opcional) */
+.file-input::before + span {
+  margin-left: 5px; /* Espaçamento à esquerda do nome do arquivo */
+}
+
+/* Estilo para o input[type="file"] (ocultar a seta de seleção do arquivo no Safari) */
+.file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+/* Estilo para a miniatura da imagem */
+.image-preview {
+  margin-top: 10px;
+  width: 60px; /* Largura fixa de 60 pixels */
+  height: 60px; /* Altura fixa de 60 pixels */
+  overflow: hidden; /* Ocultar qualquer parte da imagem que não caiba no tamanho especificado */
+}
+
+/* Estilo para o botão "X" */
+#clear-image {
+  display: none; /* Inicialmente oculto */
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #dc3545; /* Cor vermelha para o botão "X" */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#clear-image:hover {
+  background-color: #c82333; /* Cor alterada ao passar o mouse */
+}
+/* Estilize as miniaturas de imagem */
+.image-preview {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  width: 100%;
+  height: 80px;
+  max-width: 100%; /* Defina a largura máxima para evitar o esticamento em telas maiores */
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.image-preview .thumbnail-container {
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.image-preview .thumbnail-container img {
+  max-width: 70%; /* Faça as imagens ocuparem 100% do espaço disponível no contêiner */
+  height: auto; /* Mantenha a proporção da imagem */
+  object-fit: contain; /* Evite que as imagens sejam cortadas e mantenha sua proporção */
+}
+
+.image-preview .thumbnail-container button {
+  position: relative;
+  margin-bottom: 50px;
+  top: 0;
+  right: 0;
+  background-color: rgba(255, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  line-height: 18px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* Consulta de mídia para telas menores */
+@media (max-width: 768px) {
+  .image-preview .thumbnail-container {
+    flex-basis: calc(50% - 10px); /* Distribua as miniaturas em 2 colunas para telas menores */
+    max-width: calc(50% - 10px);
+  }
+}
+
+/* Consulta de mídia para telas ainda menores */
+@media (max-width: 480px) {
+  .image-preview .thumbnail-container {
+    flex-basis: calc(100% - 10px); /* Empilhe as miniaturas em uma coluna para telas muito pequenas */
+    max-width: calc(100% - 10px);
+  }
+}
